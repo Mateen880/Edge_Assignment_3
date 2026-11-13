@@ -1,0 +1,25 @@
+[Structured] original model: 11.18 M params, test_acc 84.05%
+[Structured] block 0: conv1 out / conv2 in channels 64 -> 32
+[Structured] block 1: conv1 out / conv2 in channels 64 -> 32
+[Structured] block 2: conv1 out / conv2 in channels 128 -> 64
+[Structured] block 3: conv1 out / conv2 in channels 128 -> 64
+[Structured] block 4: conv1 out / conv2 in channels 256 -> 128
+[Structured] block 5: conv1 out / conv2 in channels 256 -> 128
+[Structured] block 6: conv1 out / conv2 in channels 512 -> 256
+[Structured] block 7: conv1 out / conv2 in channels 512 -> 256
+[Structured] reconstructed model: 5.69 M params (49.1% fewer)
+[Structured] test_acc right after pruning (before fine-tuning): 24.13%
+  epoch 1 iter  100/390  loss 0.8598  acc 70.98%  (97s)
+  epoch 1 iter  200/390  loss 0.8152  acc 72.20%  (171s)
+  epoch 1 iter  300/390  loss 0.7817  acc 73.19%  (246s)
+[Structured] fine-tune epoch 1/3  train_loss 0.7621  train_acc 73.87%  test_acc 77.30%  (344s)
+  epoch 2 iter  100/390  loss 0.6365  acc 78.01%  (74s)
+  epoch 2 iter  200/390  loss 0.6244  acc 78.39%  (149s)
+  epoch 2 iter  300/390  loss 0.6061  acc 79.10%  (224s)
+[Structured] fine-tune epoch 2/3  train_loss 0.5959  train_acc 79.47%  test_acc 81.62%  (324s)
+  epoch 3 iter  100/390  loss 0.5038  acc 82.67%  (75s)
+  epoch 3 iter  200/390  loss 0.5034  acc 82.57%  (150s)
+  epoch 3 iter  300/390  loss 0.5032  acc 82.72%  (225s)
+[Structured] fine-tune epoch 3/3  train_loss 0.4982  train_acc 82.82%  test_acc 82.46%  (324s)
+[Structured] saved C:\Users\HP\Downloads\Assignments\23i-2511_A\models\resnet18_structured_pruned.pth (22.82 MB)
+[Structured] reloaded model test accuracy: 82.46%

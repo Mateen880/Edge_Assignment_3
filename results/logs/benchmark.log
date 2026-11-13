@@ -1,0 +1,24 @@
+[Benchmark-q1] fp32 ...
+    {'model': 'fp32', 'test_accuracy_%': 84.05, 'checkpoint_MB': 44.81, 'zlib_compressed_MB': 41.57, 'latency_bs1_mean_ms': 10.158, 'latency_bs1_p95_ms': 13.201, 'throughput_img_per_s': 634.4, 'precision': 'FP32', 'params_M': 11.182, 'weight_sparsity_%': 0.0}
+[Benchmark-q1] ptq_int8 ...
+    {'model': 'ptq_int8', 'test_accuracy_%': 83.95, 'checkpoint_MB': 11.32, 'zlib_compressed_MB': 9.41, 'latency_bs1_mean_ms': 6.609, 'latency_bs1_p95_ms': 8.56, 'throughput_img_per_s': 2291.8, 'precision': 'INT8', 'params_M': '', 'weight_sparsity_%': ''}
+[Benchmark-q1] qat_int8 ...
+    {'model': 'qat_int8', 'test_accuracy_%': 84.37, 'checkpoint_MB': 11.32, 'zlib_compressed_MB': 9.41, 'latency_bs1_mean_ms': 5.801, 'latency_bs1_p95_ms': 7.798, 'throughput_img_per_s': 2265.1, 'precision': 'INT8', 'params_M': '', 'weight_sparsity_%': ''}
+
+[Benchmark-q1] results written to results/q1_benchmark.csv and results/q1_predictions.csv
+   model  precision  test_accuracy_%  checkpoint_MB  zlib_compressed_MB  latency_bs1_mean_ms  throughput_img_per_s  size_reduction_x  latency_speedup_x
+    fp32       FP32            84.05          44.81               41.57               10.158                 634.4               1.0                1.0
+ptq_int8       INT8            83.95          11.32                9.41                6.609                2291.8              3.96               1.54
+qat_int8       INT8            84.37          11.32                9.41                5.801                2265.1              3.96               1.75
+[Benchmark-q2] fp32 ...
+    {'model': 'fp32', 'test_accuracy_%': 84.05, 'checkpoint_MB': 44.81, 'zlib_compressed_MB': 41.57, 'latency_bs1_mean_ms': 9.99, 'latency_bs1_p95_ms': 11.901, 'throughput_img_per_s': 568.1, 'precision': 'FP32', 'params_M': 11.182, 'weight_sparsity_%': 0.0}
+[Benchmark-q2] unstructured_pruned ...
+    {'model': 'unstructured_pruned', 'test_accuracy_%': 84.62, 'checkpoint_MB': 44.81, 'zlib_compressed_MB': 12.58, 'latency_bs1_mean_ms': 8.966, 'latency_bs1_p95_ms': 11.0, 'throughput_img_per_s': 580.5, 'precision': 'FP32', 'params_M': 11.182, 'weight_sparsity_%': 80.0}
+[Benchmark-q2] structured_pruned ...
+    {'model': 'structured_pruned', 'test_accuracy_%': 82.46, 'checkpoint_MB': 22.82, 'zlib_compressed_MB': 21.16, 'latency_bs1_mean_ms': 6.864, 'latency_bs1_p95_ms': 8.83, 'throughput_img_per_s': 993.4, 'precision': 'FP32', 'params_M': 5.687, 'weight_sparsity_%': 0.0}
+
+[Benchmark-q2] results written to results/q2_benchmark.csv and results/q2_predictions.csv
+              model  precision  test_accuracy_%  checkpoint_MB  zlib_compressed_MB  latency_bs1_mean_ms  throughput_img_per_s  size_reduction_x  latency_speedup_x
+               fp32       FP32            84.05          44.81               41.57                 9.99                 568.1               1.0                1.0
+unstructured_pruned       FP32            84.62          44.81               12.58                8.966                 580.5               1.0               1.11
+  structured_pruned       FP32            82.46          22.82               21.16                6.864                 993.4              1.96               1.46

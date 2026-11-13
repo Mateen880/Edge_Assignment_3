@@ -1,0 +1,4 @@
+model,test_accuracy_%,checkpoint_MB,zlib_compressed_MB,latency_bs1_mean_ms,latency_bs1_p95_ms,throughput_img_per_s,precision,params_M,weight_sparsity_%,size_reduction_x,latency_speedup_x,throughput_speedup_x,accuracy_drop_%,device
+fp32,84.05,44.81,41.57,9.99,11.901,568.1,FP32,11.182,0.0,1.0,1.0,1.0,0.0,CPU (4 threads)
+unstructured_pruned,84.62,44.81,12.58,8.966,11.0,580.5,FP32,11.182,80.0,1.0,1.11,1.02,-0.57,CPU (4 threads)
+structured_pruned,82.46,22.82,21.16,6.864,8.83,993.4,FP32,5.687,0.0,1.96,1.46,1.75,1.59,CPU (4 threads)

@@ -1,0 +1,6 @@
+[PTQ] loaded FP32 model, backend = x86
+[PTQ] fused modules, e.g. layer1[0].conv1 -> <class 'torch.ao.nn.intrinsic.modules.fused.ConvReLU2d'>
+[Calibration] passed 2000 training images through the observers (20 batches)
+[PTQ] converted, e.g. layer1[0].conv1 -> <class 'torch.ao.nn.intrinsic.quantized.modules.conv_relu.ConvReLU2d'>
+[PTQ] saved INT8 checkpoint C:\Users\HP\Downloads\Assignments\23i-2511_A\models\resnet18_ptq_int8.pth (11.32 MB)
+[PTQ] reloaded INT8 model test accuracy: 83.95%

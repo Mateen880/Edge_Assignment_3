@@ -1,0 +1,35 @@
+
+=== fp32 ===
+  img   0: pred=cat        conf=0.950  true=cat       
+  img   1: pred=ship       conf=0.998  true=ship      
+  img   2: pred=ship       conf=0.932  true=ship      
+  img   3: pred=airplane   conf=0.830  true=airplane  
+  img   4: pred=frog       conf=0.975  true=frog      
+
+=== ptq_int8 ===
+  img   0: pred=cat        conf=0.956  true=cat       
+  img   1: pred=ship       conf=0.996  true=ship      
+  img   2: pred=ship       conf=0.930  true=ship      
+  img   3: pred=airplane   conf=0.800  true=airplane  
+  img   4: pred=frog       conf=0.962  true=frog      
+
+=== qat_int8 ===
+  img   0: pred=cat        conf=0.980  true=cat       
+  img   1: pred=ship       conf=0.999  true=ship      
+  img   2: pred=ship       conf=0.987  true=ship      
+  img   3: pred=airplane   conf=0.619  true=airplane  
+  img   4: pred=frog       conf=0.985  true=frog      
+
+=== unstructured_pruned ===
+  img   0: pred=cat        conf=0.916  true=cat       
+  img   1: pred=ship       conf=0.999  true=ship      
+  img   2: pred=ship       conf=0.939  true=ship      
+  img   3: pred=airplane   conf=0.529  true=airplane  
+  img   4: pred=frog       conf=0.984  true=frog      
+
+=== structured_pruned ===
+  img   0: pred=cat        conf=0.958  true=cat       
+  img   1: pred=ship       conf=0.996  true=ship      
+  img   2: pred=ship       conf=0.933  true=ship      
+  img   3: pred=ship       conf=0.632  true=airplane  
+  img   4: pred=frog       conf=0.970  true=frog      

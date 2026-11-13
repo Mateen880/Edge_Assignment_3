@@ -1,0 +1,24 @@
+[Unstructured] original FP32 test accuracy: 84.05%
+[Unstructured] target sparsity 80% in 4 iterations (33.13% of remaining weights per iteration)
+[Unstructured] iteration 1: sparsity 33.13%  test_acc after pruning 83.99%
+  epoch 1 iter  100/390  loss 0.4267  acc 85.14%  (175s)
+  epoch 1 iter  200/390  loss 0.4325  acc 84.95%  (349s)
+  epoch 1 iter  300/390  loss 0.4349  acc 84.77%  (523s)
+[Unstructured it1] fine-tune epoch 1/1  train_loss 0.4340  train_acc 84.84%  test_acc 84.27%  (702s)
+[Unstructured] iteration 2: sparsity 55.28%  test_acc after pruning 83.58%
+  epoch 1 iter  100/390  loss 0.4352  acc 84.71%  (152s)
+  epoch 1 iter  200/390  loss 0.4310  acc 84.88%  (305s)
+  epoch 1 iter  300/390  loss 0.4263  acc 85.08%  (458s)
+[Unstructured it2] fine-tune epoch 1/1  train_loss 0.4241  train_acc 85.17%  test_acc 84.46%  (637s)
+[Unstructured] iteration 3: sparsity 70.09%  test_acc after pruning 82.58%
+  epoch 1 iter  100/390  loss 0.4324  acc 85.14%  (149s)
+  epoch 1 iter  200/390  loss 0.4286  acc 85.12%  (299s)
+  epoch 1 iter  300/390  loss 0.4251  acc 85.22%  (448s)
+[Unstructured it3] fine-tune epoch 1/1  train_loss 0.4218  train_acc 85.33%  test_acc 84.55%  (629s)
+[Unstructured] iteration 4: sparsity 80.00%  test_acc after pruning 81.73%
+  epoch 1 iter  100/390  loss 0.4574  acc 84.32%  (153s)
+  epoch 1 iter  200/390  loss 0.4520  acc 84.31%  (305s)
+  epoch 1 iter  300/390  loss 0.4408  acc 84.81%  (464s)
+[Unstructured it4] fine-tune epoch 1/1  train_loss 0.4317  train_acc 85.06%  test_acc 84.62%  (643s)
+[Unstructured] permanent sparsity 80.00%; saved C:\Users\HP\Downloads\Assignments\23i-2511_A\models\resnet18_unstructured_pruned.pth (44.81 MB, zlib-compressed 12.58 MB)
+[Unstructured] reloaded model test accuracy: 84.62%

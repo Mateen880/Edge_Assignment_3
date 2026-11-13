@@ -1,0 +1,6 @@
+[ONNX-CPU] fp32                 acc  84.05%  size  44.72 MB  latency   2.032 ms  throughput   1743.4 img/s
+[ONNX-CPU] ptq_int8             acc  83.93%  size  11.31 MB  latency   1.730 ms  throughput   2478.0 img/s
+[ONNX-CPU] qat_int8             acc  84.34%  size  11.31 MB  latency   1.896 ms  throughput   2104.3 img/s
+[ONNX-CPU] unstructured_pruned  acc  84.62%  size  44.72 MB  latency   2.002 ms  throughput   1727.7 img/s
+[ONNX-CPU] structured_pruned    acc  82.46%  size  22.74 MB  latency   0.951 ms  throughput   3228.7 img/s
+[ONNX-CPU] results written to results/onnx_benchmark.csv

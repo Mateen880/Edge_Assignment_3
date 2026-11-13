@@ -1,0 +1,14 @@
+[QAT] initialised from FP32 checkpoint, backend = x86, device = cpu
+[QAT] inserted 51 fake-quantization modules, e.g. layer1[0].conv1 -> <class 'torch.ao.nn.intrinsic.qat.modules.conv_fused.ConvBnReLU2d'>
+  epoch 1 iter  100/390  loss 0.4143  acc 85.78%  (189s)
+  epoch 1 iter  200/390  loss 0.4122  acc 85.71%  (361s)
+  epoch 1 iter  300/390  loss 0.4113  acc 85.67%  (528s)
+[QAT] epoch 1/2  train_loss 0.4137  train_acc 85.60%  INT8 test_acc 84.09%  (691s)
+[QAT] observers and BN statistics frozen for the final epoch
+  epoch 2 iter  100/390  loss 0.3797  acc 86.80%  (162s)
+  epoch 2 iter  200/390  loss 0.3763  acc 86.82%  (322s)
+  epoch 2 iter  300/390  loss 0.3753  acc 86.79%  (530s)
+[QAT] epoch 2/2  train_loss 0.3719  train_acc 86.90%  INT8 test_acc 84.37%  (741s)
+[QAT] converted, e.g. layer1[0].conv1 -> <class 'torch.ao.nn.intrinsic.quantized.modules.conv_relu.ConvReLU2d'>
+[QAT] saved INT8 checkpoint C:\Users\HP\Downloads\Assignments\23i-2511_A\models\resnet18_qat_int8.pth (11.32 MB)
+[QAT] reloaded INT8 model test accuracy: 84.37%

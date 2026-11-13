@@ -1,0 +1,6 @@
+model,runtime,test_accuracy_%,onnx_file_MB,latency_bs1_mean_ms,latency_bs1_p95_ms,throughput_img_per_s,latency_speedup_x,throughput_speedup_x
+fp32,ONNX Runtime 1.20.1 CPU (4 threads),84.05,44.72,2.032,2.378,1743.4,1.0,1.0
+ptq_int8,ONNX Runtime 1.20.1 CPU (4 threads),83.93,11.31,1.73,2.201,2478.0,1.17,1.42
+qat_int8,ONNX Runtime 1.20.1 CPU (4 threads),84.34,11.31,1.896,2.359,2104.3,1.07,1.21
+unstructured_pruned,ONNX Runtime 1.20.1 CPU (4 threads),84.62,44.72,2.002,2.319,1727.7,1.01,0.99
+structured_pruned,ONNX Runtime 1.20.1 CPU (4 threads),82.46,22.74,0.951,1.196,3228.7,2.14,1.85

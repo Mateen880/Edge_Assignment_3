@@ -1,0 +1,5 @@
+[ONNX] fp32                 -> models\onnx\resnet18_fp32.onnx  (44.72 MB)  max|diff| 0.0000  top-1 agreement 100.0%
+[ONNX] ptq_int8             -> models\onnx\resnet18_ptq_int8.onnx  (11.31 MB)  max|diff| 0.9426  top-1 agreement 96.9%
+[ONNX] qat_int8             -> models\onnx\resnet18_qat_int8.onnx  (11.31 MB)  max|diff| 0.4961  top-1 agreement 100.0%
+[ONNX] unstructured_pruned  -> models\onnx\resnet18_unstructured_pruned.onnx  (44.72 MB)  max|diff| 0.0000  top-1 agreement 100.0%
+[ONNX] structured_pruned    -> models\onnx\resnet18_structured_pruned.onnx  (22.74 MB)  max|diff| 0.0000  top-1 agreement 100.0%
